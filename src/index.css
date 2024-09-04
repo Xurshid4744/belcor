@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.2;
+  font-size: 1rem;
+  background-color: light-dark(#ddd, #444);
+  color: light-dark(#444, #ddd);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  --max-width: 1280px;
+  --padding: 20px;
+  max-width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+#data-time {
+  outline: none;
+  padding: 10px;
+}
