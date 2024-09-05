@@ -18,6 +18,7 @@ const Snackbar = () => {
       return;
     }
     dispatch(closeSnackbar());
+    console.log(event)
   };
 
   return (

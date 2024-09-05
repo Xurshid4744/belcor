@@ -76,6 +76,7 @@ export const DataTable = <T,>({
 
   const handleSaveClick = (rowIndex: number) => {
     setEditingRow(null);
+    console.log(rowIndex)
     // Ma'lumotlarni saqlash logikasi
   };
 
